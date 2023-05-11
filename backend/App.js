@@ -11,7 +11,7 @@ app.use((req, res, next) => {
 
 //connect to mongoDB Atlas 
 try {
-    const connectionString = 'mongodb+srv://test:test@cluster0.efhykpy.mongodb.net/test1?retryWrites=true&w=majority';
+    const connectionString = 'mongodb+srv://test:test@cluster0.<PASSWORD>.mongodb.net/test1?retryWrites=true&w=majority';
     mongoose.connect(connectionString, { useNewUrlParser: true, useUnifiedTopology: true });
     console.log("Connected to MongoDB Atlas");
   } catch (error) {
